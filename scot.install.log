@@ -1,0 +1,799 @@
+==================== SCOT 3.5 Installer =======================
+DEVDIR is /root/scot
+Running as root: Yes
+~~~~~ Determining http Proxy settings
+http_proxy  = http://10.1.7.55:8080
+http_proxy    : http://10.1.7.55:8080
+https_proxy = http://10.1.7.55:8080
+https_proxy   : http://10.1.7.55:8080
+!!! You have a proxy environment variable set, but have 
+!!! not set your "no_proxy" environment variable
+!!! recommend adding the following to your environment 
+!!!    export no_proxy=localhost,127.0.0.1
+!!!
+Install Src Dir: 
+running /root/scot/install/determine_distro.sh
+ DISTRO: Linux RedHat 7.5.1804 (Core 3.10.0-514.el7.x86_64 x86_64) 
+Linux distro   : RedHat
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+No packages marked for update
+Operating Sys  : CentOS
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+No packages marked for update
+OS Version     : 7
+Install Mode            = INSTMODE             => ALL
+Authentication Mode     = AUTHMODE             => Local
+Delete existing Scot DB = RESETDB              => no
+Delete installation dir = DELDIR               => no
+Refresh Apt/Yum Repos   = REFRESHREPOS         => yes
+Scot Private Modules Loc= SCOT_PRIVATE_MODULES => 
+Reset Elasticsearch DB  = ES_RESET_DB          => no
+____ INSTALL MODE ALL
+---
+--- Installing System Package Prerequisites for CentOS
+---
+-- adding config to allow unverified ssl in yum 
+--     you can remove this from /etc/yum.conf after install
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package epel-release-7-11.noarch already installed and latest version
+Nothing to do
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+No packages marked for update
+-- installing development tools
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Maybe run: yum groups mark install (see man yum)
+No packages in any requested group available to install or update
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package redhat-lsb-4.1-27.el7.centos.1.x86_64 already installed and latest version
+Nothing to do
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package 1:openssl-devel-1.0.2k-12.el7.x86_64 already installed and latest version
+Nothing to do
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package 1:openssl-1.0.2k-12.el7.x86_64 already installed and latest version
+Nothing to do
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package net-tools-2.0-0.22.20131004git.el7.x86_64 already installed and latest version
+Nothing to do
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package wget-1.14-15.el7_4.1.x86_64 already installed and latest version
+Nothing to do
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package git-1.8.3.1-13.el7.x86_64 already installed and latest version
+Nothing to do
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package file-devel-5.11-33.el7.x86_64 already installed and latest version
+Nothing to do
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package dialog-1.2-4.20130523.el7.x86_64 already installed and latest version
+Nothing to do
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package krb5-libs-1.15.1-19.el7.x86_64 already installed and latest version
+Nothing to do
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package krb5-devel-1.15.1-19.el7.x86_64 already installed and latest version
+Nothing to do
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package GeoIP-1.5.0-11.el7.x86_64 already installed and latest version
+Nothing to do
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package libmaxminddb-1.2.0-1.el7.x86_64 already installed and latest version
+Nothing to do
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package libmaxminddb-devel-1.2.0-1.el7.x86_64 already installed and latest version
+Nothing to do
+
+-- Installing 
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+No package libgmp3-devel available.
+Error: Nothing to do
+---
+--- Installing JAVA
+---
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package 1:java-1.7.0-openjdk-1.7.0.181-2.6.14.8.el7_5.x86_64 already installed and latest version
+Nothing to do
+---
+--- Installing Apache2 
+---
+--
+-- CENT/RH based system install of apache2
+--
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package httpd-2.4.6-80.el7.centos.x86_64 already installed and latest version
+Package 1:mod_ssl-2.4.6-80.el7.centos.x86_64 already installed and latest version
+Nothing to do
+-- adding firewalld command to allow web traffic
+Warning: ALREADY_ENABLED: 80:tcp
+success
+Warning: ALREADY_ENABLED: 443:tcp
+success
+success
+--
+-- configuring apache2
+--
+-- DEVDIR is /root/scot
+-- CSD    is /root/scot/install/src/apache2
+- looking for /root/scot/../Scot-Internal-Modules/etc/scot-revproxy.conf
+- looking for /root/scot/install/src/apache2/scot-revproxy-CentOS.conf
+-
+- Found Scot Reverse Proxy Config File:
+- /root/scot/install/src/apache2/scot-revproxy-CentOS.conf
+- installing...
+-
+- clearing existing configs from /etc/httpd/conf.d
+-
+- Modifying /etc/httpd/conf.d/scot.conf
+- document root = /opt/scot
+- revproxy port = 3000
+- hostname      = Centos7-Temp
+-
+-- checking that sed worked
+looks ok
+-
+- scot.key exists in /etc/apache2/ssl, 
+-
+- CENT/RH Note
+-    this installer does not check that the contents of 
+-    /etc/httpd/conf.modules.d are appropriate 
+-    you will need to ensure that the proxy proxy_http ssl
+-    headers rewrite and authnz_ldap modules are enabled 
+-    for scot to work.
+-
+- apache install / config completed
+- apache still needs a restart 
+-
+---
+--- Installing ActiveMQ
+--- AMQDIR = /opt/activemq
+--- AMQTAR = apache-activemq-5.13.2-bin.tar.gz
+--- AMQURL = https://repository.apache.org/content/repositories/releases/org/apache/activemq/apache-activemq/5.13.2/apache-activemq-5.13.2-bin.tar.gz
+--- CONFIGS= /root/scot/install/src/ActiveMQ/amq
+---
+-- checking for activemq user and group
+-- activemq user exists
+-- activemq appears to already be installed
+-- logging directory /var/log/activemq exists
+-- webapp already present
+-- installing SCOT xml files into /opt/activemq/conf
+-- installing SCOT jetty.xml files into /opt/activemq/conf
+-- installing /etc/init.d/activemq
+-- ensuring proper ownership
+-- /etc/systemd/system/activmq.service exists, skipping...
+activemq.service is not a native service, redirecting to /sbin/chkconfig.
+Executing /sbin/chkconfig activemq on
+-- installation of ActiveMQ complete, starting...
+-- you will need to verify that process is running
+-- ps -ef | grep activemq
+---
+--- Installing ElasticSearch
+---
+-- ensuring elastic repo entries
+-importing signing key
+error: https::/artifacts.elastic.co/GPG-KEY-elasticsearch: import read failed(2).
+-- /etc/yum.repos.d/elasticsearch.repo exists
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package elasticsearch-5.6.9-1.noarch already installed and latest version
+Nothing to do
+~~~ pausing for a few seconds to allow ES to spin up
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed connect to localhost:9200; Connection refused
+-- index for scot already works
+---
+--- Installing Mongodb 
+---
+-- ensuring correct mongodb repo
+-- using http://10.1.7.55:8080 to get key
+-- mongo yum repo already present
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package mongodb-org-3.2.20-1.el7.x86_64 already installed and latest version
+Nothing to do
+--
+-- configuring MONGODB for SCOT
+--
+-- stopping mongodb if it is running
+-- ensuring failIndexKeyTooLong is set
+-- scot installed config files will include failIndexKeyTooLong paramter set to false
+-- /var/lib/mongodb present
+-- ensuring ownership
+-- clearing /var/log/mongodb/mongod.log
+{ "databases" : [ { "name" : "local", "sizeOnDisk" : 65536, "empty" : false }, { "name" : "scot-prod", "sizeOnDisk" : 421888, "empty" : false } ], "totalSize" : 487424, "ok" : 1 }
+-- scot-prod EXISTS.  
+-- skipping SCOT DB initialization
+---
+--- Installing Required Perl Packages and Modules
+---
+PERL reports version as 5.016003
+want 5.018 or greater
+COMP is 0
+Your Perl is out of date.  Upgrade to 5.18 or better 
+== See installation docs in docs/source/install.rst for instructions on how to install new perl
+
+ this means yo uare most likely on a CentOS system, condolences.
+ the install script will attempt to install a working perl for you
+---
+--- Installing System Perl Packages
+---
+!!! are you sure you want to install on CentOS? Life is better on Ubuntu !!!
+-- installing things that should never be pulled out of a perl install, thanks centos
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-hcm.viettelidc.com.vn
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos-hcm.viettelidc.com.vn
+ * updates: centos-hcm.viettelidc.com.vn
+Package 4:perl-devel-5.16.3-292.el7.x86_64 already installed and latest version
+Package patch-2.7.1-10.el7_5.x86_64 already installed and latest version
+Nothing to do
+-- installing perlbrew to get around crappy centos perl version
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100   170  100   170    0     0    108      0  0:00:01  0:00:01 --:--:--   108
+  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0100  1410  100  1410    0     0    563      0  0:00:02  0:00:02 --:--:--  3691
+
+## Download the latest perlbrew
+
+## Installing perlbrew
+Using Perl </usr/bin/perl>
+perlbrew is installed: /opt/perl5/bin/perlbrew
+
+perlbrew root (/opt/perl5) is initialized.
+
+Append the following piece of code to the end of your ~/.bash_profile and start a
+new shell, perlbrew should be up and fully functional from there:
+
+    source /opt/perl5/etc/bashrc
+
+Simply run `perlbrew` for usage details.
+
+Happy brewing!
+
+## Installing patchperl
+
+## Done.
+-- adding perlbrew environment to system profile
+-- brewing 5.18.2
+
+ABORT: perl-5.18.2 is already installed.
+
+- PERL VERSION IS NOW -
+Summary of my perl5 (revision 5 version 18 subversion 2) configuration:
+   
+  Platform:
+    osname=linux, osvers=3.10.0-514.el7.x86_64, archname=x86_64-linux
+    uname='linux centos7-temp 3.10.0-514.el7.x86_64 #1 smp tue nov 22 16:42:41 utc 2016 x86_64 x86_64 x86_64 gnulinux '
+    config_args='-de -Dprefix=/opt/perl5/perls/perl-5.18.2 -Aeval:scriptdir=/opt/perl5/perls/perl-5.18.2/bin'
+    hint=recommended, useposix=true, d_sigaction=define
+    useithreads=undef, usemultiplicity=undef
+    useperlio=define, d_sfio=undef, uselargefiles=define, usesocks=undef
+    use64bitint=define, use64bitall=define, uselongdouble=undef
+    usemymalloc=n, bincompat5005=undef
+  Compiler:
+    cc='cc', ccflags ='-fno-strict-aliasing -pipe -fstack-protector -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+    optimize='-O2',
+    cppflags='-fno-strict-aliasing -pipe -fstack-protector -I/usr/local/include'
+    ccversion='', gccversion='4.8.5 20150623 (Red Hat 4.8.5-28)', gccosandvers=''
+    intsize=4, longsize=8, ptrsize=8, doublesize=8, byteorder=12345678
+    d_longlong=define, longlongsize=8, d_longdbl=define, longdblsize=16
+    ivtype='long', ivsize=8, nvtype='double', nvsize=8, Off_t='off_t', lseeksize=8
+    alignbytes=8, prototype=define
+  Linker and Libraries:
+    ld='cc', ldflags =' -fstack-protector -L/usr/local/lib'
+    libpth=/usr/local/lib /lib/../lib64 /usr/lib/../lib64 /lib /usr/lib /lib64 /usr/lib64 /usr/local/lib64
+    libs=-lnsl -lgdbm -ldb -ldl -lm -lcrypt -lutil -lc -lgdbm_compat
+    perllibs=-lnsl -ldl -lm -lcrypt -lutil -lc
+    libc=libc-2.17.so, so=so, useshrplib=false, libperl=libperl.a
+    gnulibc_version='2.17'
+  Dynamic Linking:
+    dlsrc=dl_dlopen.xs, dlext=so, d_dlsymun=undef, ccdlflags='-Wl,-E'
+    cccdlflags='-fPIC', lddlflags='-shared -O2 -L/usr/local/lib -fstack-protector'
+
+
+Characteristics of this binary (from libperl): 
+  Compile-time options: HAS_TIMES PERLIO_LAYERS PERL_DONT_CREATE_GVSV
+                        PERL_HASH_FUNC_ONE_AT_A_TIME_HARD PERL_MALLOC_WRAP
+                        PERL_PRESERVE_IVUV PERL_SAWAMPERSAND USE_64_BIT_ALL
+                        USE_64_BIT_INT USE_LARGE_FILES USE_LOCALE
+                        USE_LOCALE_COLLATE USE_LOCALE_CTYPE
+                        USE_LOCALE_NUMERIC USE_PERLIO USE_PERL_ATOF
+  Locally applied patches:
+	Devel::PatchPerl 1.48
+  Built under linux
+  Compiled at May 29 2018 10:47:28
+  %ENV:
+    PERLBREW_HOME="/root/.perlbrew"
+    PERLBREW_MANPATH="/opt/perl5/perls/perl-5.18.2/man"
+    PERLBREW_PATH="/opt/perl5/bin:/opt/perl5/perls/perl-5.18.2/bin"
+    PERLBREW_PERL="perl-5.18.2"
+    PERLBREW_ROOT="/opt/perl5"
+    PERLBREW_SHELLRC_VERSION="0.82"
+    PERLBREW_VERSION="0.82"
+  @INC:
+    /opt/perl5/perls/perl-5.18.2/lib/site_perl/5.18.2/x86_64-linux
+    /opt/perl5/perls/perl-5.18.2/lib/site_perl/5.18.2
+    /opt/perl5/perls/perl-5.18.2/lib/5.18.2/x86_64-linux
+    /opt/perl5/perls/perl-5.18.2/lib/5.18.2
+    .
+--
+-- refreshing cpanm
+--
+-- using existing cpanm to refresh
+App::cpanminus is up to date. (1.7044)
+-- Cent/RH system, invoking perlbrew to modernize the perl
+LWP::Protocol::https is up to date. (6.07)
+--
+-- 1st attempt at installing Array::Split
+--
+Array::Split is up to date. (1.173190)
+-- installed Array::Split
+--
+--
+-- 1st attempt at installing Data::Dumper
+--
+Data::Dumper is up to date. (2.161)
+-- installed Data::Dumper
+--
+--
+-- 1st attempt at installing Data::Dumper::HTML
+--
+Data::Dumper::HTML is up to date. (0.0.2)
+-- installed Data::Dumper::HTML
+--
+--
+-- 1st attempt at installing Data::Dumper::Concise
+--
+Data::Dumper::Concise is up to date. (2.023)
+-- installed Data::Dumper::Concise
+--
+--
+-- 1st attempt at installing Data::Clean@0.48
+--
+Data::Clean is up to date. (0.48)
+-- installed Data::Clean@0.48
+--
+--
+-- 1st attempt at installing Data::Clean::FromJSON
+--
+Data::Clean::FromJSON is up to date. (0.38)
+-- installed Data::Clean::FromJSON
+--
+--
+-- 1st attempt at installing Daemon::Control
+--
+Daemon::Control is up to date. (0.001008)
+-- installed Daemon::Control
+--
+--
+-- 1st attempt at installing Net::LDAP
+--
+Net::LDAP is up to date. (0.65)
+-- installed Net::LDAP
+--
+--
+-- 1st attempt at installing Net::SMTP::TLS
+--
+Net::SMTP::TLS is up to date. (0.12)
+-- installed Net::SMTP::TLS
+--
+--
+-- 1st attempt at installing Net::Stomp
+--
+Net::Stomp is up to date. (0.57)
+-- installed Net::Stomp
+--
+--
+-- 1st attempt at installing Net::STOMP::Client
+--
+Net::STOMP::Client is up to date. (2.3)
+-- installed Net::STOMP::Client
+--
+--
+-- 1st attempt at installing Net::IDN::Encode
+--
+Net::IDN::Encode is up to date. (2.400)
+-- installed Net::IDN::Encode
+--
+--
+-- 1st attempt at installing Net::Works::Network
+--
+Net::Works::Network is up to date. (0.22)
+-- installed Net::Works::Network
+--
+--
+-- 1st attempt at installing Net::IP
+--
+Net::IP is up to date. (1.26)
+-- installed Net::IP
+--
+--
+-- 1st attempt at installing Moose
+--
+Moose is up to date. (2.2011)
+-- installed Moose
+--
+--
+-- 1st attempt at installing Moose::Role
+--
+Moose::Role is up to date. (2.2011)
+-- installed Moose::Role
+--
+--
+-- 1st attempt at installing Moose::Util::TypeConstraints
+--
+Moose::Util::TypeConstraints is up to date. (2.2011)
+-- installed Moose::Util::TypeConstraints
+--
+--
+-- 1st attempt at installing MooseX::MetaDescription::Meta::Attribute
+--
+MooseX::MetaDescription::Meta::Attribute is up to date. (0.06)
+-- installed MooseX::MetaDescription::Meta::Attribute
+--
+--
+-- 1st attempt at installing MooseX::Singleton
+--
+MooseX::Singleton is up to date. (0.30)
+-- installed MooseX::Singleton
+--
+--
+-- 1st attempt at installing MooseX::Emulate::Class::Accessor::Fast
+--
+MooseX::Emulate::Class::Accessor::Fast is up to date. (0.00903)
+-- installed MooseX::Emulate::Class::Accessor::Fast
+--
+--
+-- 1st attempt at installing MooseX::Types
+--
+MooseX::Types is up to date. (0.50)
+-- installed MooseX::Types
+--
+--
+-- 1st attempt at installing MooseX::Types::Common
+--
+MooseX::Types::Common is up to date. (0.001014)
+-- installed MooseX::Types::Common
+--
+--
+-- 1st attempt at installing MooseX::MethodAttributes
+--
+MooseX::MethodAttributes is up to date. (0.31)
+-- installed MooseX::MethodAttributes
+--
+--
+-- 1st attempt at installing Safe
+--
+Safe is up to date. (2.35)
+-- installed Safe
+--
+--
+-- 1st attempt at installing Readonly
+--
+Readonly is up to date. (2.05)
+-- installed Readonly
+--
+--
+-- 1st attempt at installing DateTime
+--
+DateTime is up to date. (1.49)
+-- installed DateTime
+--
+--
+-- 1st attempt at installing DateTime::Cron::Simple
+--
+DateTime::Cron::Simple is up to date. (0.2)
+-- installed DateTime::Cron::Simple
+--
+--
+-- 1st attempt at installing DateTime::Format::Strptime
+--
+DateTime::Format::Strptime is up to date. (1.75)
+-- installed DateTime::Format::Strptime
+--
+--
+-- 1st attempt at installing DateTime::Format::Natural
+--
+DateTime::Format::Natural is up to date. (1.05)
+-- installed DateTime::Format::Natural
+--
+--
+-- 1st attempt at installing Time::HiRes
+--
+Time::HiRes is up to date. (1.9758)
+-- installed Time::HiRes
+--
+--
+-- 1st attempt at installing Server::Starter
+--
+Server::Starter is up to date. (0.34)
+-- installed Server::Starter
+--
+--
+-- 1st attempt at installing PSGI
+--
+PSGI is up to date. (1.102)
+-- installed PSGI
+--
+--
+-- 1st attempt at installing CGI::PSGI
+--
+CGI::PSGI is up to date. (0.15)
+-- installed CGI::PSGI
+--
+--
+-- 1st attempt at installing CGI::Compile
+--
+CGI::Compile is up to date. (0.22)
+-- installed CGI::Compile
+--
+--
+-- 1st attempt at installing HTTP::Server::Simple::PSGI
+--
+HTTP::Server::Simple::PSGI is up to date. (0.16)
+-- installed HTTP::Server::Simple::PSGI
+--
+--
+-- 1st attempt at installing JSON
+--
+JSON is up to date. (2.97001)
+-- installed JSON
+--
+--
+-- 1st attempt at installing JSON::XS
+--
+JSON::XS is up to date. (3.04)
+-- installed JSON::XS
+--
+--
+-- 1st attempt at installing DBI
+--
+DBI is up to date. (1.641)
+-- installed DBI
+--
+--
+-- 1st attempt at installing Parallel::ForkManager
+--
+Parallel::ForkManager is up to date. (1.19)
+-- installed Parallel::ForkManager
+--
+--
+-- 1st attempt at installing AnyEvent
+--
+AnyEvent is up to date. (7.14)
+-- installed AnyEvent
+--
+--
+-- 1st attempt at installing AnyEvent::STOMP::Client
+--
+AnyEvent::STOMP::Client is up to date. (0.39)
+-- installed AnyEvent::STOMP::Client
+--
+--
+-- 1st attempt at installing AnyEvent::ForkManager
+--
+--> Working on AnyEvent::ForkManager
+Fetching http://www.cpan.org/authors/id/K/KA/KARUPA/AnyEvent-ForkManager-0.06.tar.gz ... OK
+Configuring AnyEvent-ForkManager-0.06 ... OK
+Building and testing AnyEvent-ForkManager-0.06 ... ! Installing AnyEvent::ForkManager failed. See /root/.cpanm/work/1527578771.2013/build.log for details. Retry with --force to force install it.
+FAIL
+!!!
+!!! AnyEvent::ForkManager failed install!  Will re-attempt later...
+!!!
+--
+-- 1st attempt at installing Async::Interrupt
+--
+Async::Interrupt is up to date. (1.24)
+-- installed Async::Interrupt
+--
+--
+-- 1st attempt at installing Number::Bytes::Human
+--
+Number::Bytes::Human is up to date. (0.11)
+-- installed Number::Bytes::Human
+--
+--
+-- 1st attempt at installing Sys::RunAlone
+--
+Sys::RunAlone is up to date. (0.13)
+-- installed Sys::RunAlone
+--
+--
+-- 1st attempt at installing Encode
+--
+Encode is up to date. (2.98)
+-- installed Encode
+--
+--
+-- 1st attempt at installing FileHandle
+--
+skipping S/SH/SHAY/perl-5.26.2.tar.bz2
+-- installed FileHandle
+--
+--
+-- 1st attempt at installing File::Slurp
+--
+File::Slurp is up to date. (9999.19)
+-- installed File::Slurp
+--
+--
+-- 1st attempt at installing File::Temp
+--
+File::Temp is up to date. (0.2304)
+-- installed File::Temp
+--
+--
+-- 1st attempt at installing File::Type
+--
+File::Type is up to date. (0.22)
+-- installed File::Type
+--
+--
+-- 1st attempt at installing HTML::Entities
+--
+HTML::Entities is up to date. (3.69)
+-- installed HTML::Entities
+--
+--
+-- 1st attempt at installing HTML::Scrubber
+--
+--> Working on HTML::Scrubber
+Fetching http://www.cpan.org/authors/id/N/NI/NIGELM/HTML-Scrubber-0.17.tar.gz ... OK
+Configuring HTML-Scrubber-0.17 ... OK
+==> Found dependencies: Test::PAUSE::Permissions
+--> Working on Test::PAUSE::Permissions
+Fetching http://www.cpan.org/authors/id/I/IS/ISHIGAKI/Test-PAUSE-Permissions-0.06.tar.gz ... OK
+Configuring Test-PAUSE-Permissions-0.06 ... OK
+==> Found dependencies: PAUSE::Permissions
+--> Working on PAUSE::Permissions
+Fetching http://www.cpan.org/authors/id/N/NE/NEILB/PAUSE-Permissions-0.17.tar.gz ... OK
+Configuring PAUSE-Permissions-0.17 ... OK
+==> Found dependencies: MooX::Options, Time::Duration::Parse
+--> Working on MooX::Options
+Fetching http://www.cpan.org/authors/id/R/RE/REHSACK/MooX-Options-4.103.tar.gz ... OK
+Configuring MooX-Options-4.103 ... OK
+==> Found dependencies: Text::LineFold
+--> Working on Text::LineFold
+Fetching http://www.cpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2018.003.tar.gz ... OK
+Configuring Unicode-LineBreak-2018.003 ... OK
+Building and testing Unicode-LineBreak-2018.003 ... 
